@@ -110,4 +110,25 @@ input:focus-visible {
     border: solid 1px #3232d431 !important;
 }
 
+th, td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 
+  }
+
+  th {
+    background-color:  #3232d46c;
+    color: white;
+  }
+
+  tr:hover {background-color: #3232d431;}
+
+  #forfait_box2{
+    background-color: white;
+    box-shadow: 0px 0px 9px 1px #00000073;
+    padding: 1rem;
+    border-radius: 7px;
+    max-width: 600px;
+    width: 100%;
+}

@@ -15,7 +15,7 @@ app.use(bodyParser.json())
 app.use(express.static(path.join(path.dirname(''), 'public')))
 app.set('views', path.join(path.dirname(''), 'public'))
 app.set('view engine', 'html');
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
   res.sendFile(path.resolve('public/index.html'))
 })
 app.get('/monforfait', (req, res) => {

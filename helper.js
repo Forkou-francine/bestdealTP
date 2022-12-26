@@ -86,6 +86,7 @@ function F(x,opt,Rep,reste,k){
      */
     let d;
 
+    console.log("message");
     for (let j = 0; j < opt.length; j++) {
         if (opt[j].prix > x ) {
             reste = x
@@ -112,7 +113,7 @@ function F(x,opt,Rep,reste,k){
     Rep[k].valeur = d.valeur
     Rep[k].duree = d.duree
     Rep[k].nom = d.nom
-	return {Rep, reste};
+	return max;
 }
 
 /**
@@ -134,7 +135,7 @@ function createForfait(forfaitJson){
         appels.push({...d, valeur: forfait.appels})
         data.push({...d, valeur: forfait.data})
     }
-
+    console.log([sms, appels, data]);
     return [sms,appels,data]
 }
 
