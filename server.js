@@ -5,7 +5,7 @@ import path from 'path'
 import { BestOptions, createForfait } from './helper.js'
 import fs from "fs"
 const app = express()
-const port = process.env.PORT || 3000
+const port = 3000
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
