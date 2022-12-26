@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>FORFAITS</title>
+</head>
+<body>
+
+    <div id="forfait_box">
+        <h1>mon forfait</h1>
+        <form action="/forfait" method="post" id="form">
+            <div class="price form_input">
+                <label for="price" >Mon Budget<span> (en Fcfa )</span></label>
+                <div class="form-control">
+                    <img src="assets/budget.png" alt="">
+                    <input type="number" min="20" max="26000" id="price" name="price">
+                </div>
+            </div>
+            <div class="combinason form_input">
+                <label for="">Mes Priorités <span>(appels - sms - data )</span></label>
+                <div>
+                    <div class="form_input_2">
+                        <div class="form-control">
+                            <img src="assets/phone.png" alt="">
+                            <input type="number" max="3" name="appels" min="0" id="appels">
+                        </div>
+                    </div>
+                    <div class="form_input_2">
+                        <div class="form-control">
+                            <img src="assets/message.png" alt="">
+
+                            <input type="number" max="3" name="sms" min="0" id="sms">
+                        </div>
+                    </div>
+                    <div class="form_input_2">
+                        <div class="form-control">
+                            <img src="assets/network.png" alt="">
+                            <input type="number" max="3" min="0" name="data" id="data">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="validite form_input">
+                <label for="validite">Durée <span>(en jours )</span></label>
+                <div class="form-control">
+                    <img src="assets/heures.png" alt="">
+                    <input type="number" name="validite" min="1" max="30" id="validite">
+                </div>
+            </div>
+    
+            <button type="submit">envoyer</button>
+        </form>
+    </div>
+    
+    <div class="result">
+        result
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-size: .9rem;
+    background-color: #3232d4b8;
+    color: black;
+    height: 100vh;
+    gap: 1rem;
+
+}
+
+#forfait_box{
+    background-color: white;
+    box-shadow: 0px 0px 9px 1px #00000073;
+    padding: 1rem;
+    border-radius: 7px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.form_input{
+    margin: 1rem 0;
+}
+
+.combinason{
+    margin: .7rem 0;
+}
+
+.form-control{
+    position: relative;
+}
+
+.form-control img{
+    position: absolute;
+    z-index: 111;
+    width: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+}
+
+.combinason > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .3rem;
+}
+
+h2{
+    text-align: center;
+}
+
+.combinason > div .form_input_2{
+    width: 31%;
+}
+
+#forfait_box h1{
+    font-family: poppins, sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#forfait_box form label{
+    display: block;
+    margin-bottom: 0.6rem;
+}
+
+#forfait_box form input{
+
+    width: 100%;
+    padding: 0.6rem;
+    padding-left: 1.6rem;
+    border-radius: 5px;
+    border: solid 1px #00000024;
+    font-family: poppins, sans-serif;
+}
+
+label span{
+    color: rgb(185, 179, 179);
+    font-size: .8rem;
+}
+
+button{
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    padding: 0.6rem 0;
+    background: #3232d4b8;
+    border:  solid 1px #3232d4b8;
+    font-family: poppins;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input:focus-visible {
+    outline-offset: 0;
+    outline: solid 1px #3232d46c;
+    border: solid 1px #3232d431 !important;
+}
+
+
